@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ExceptionConfigure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Exceptions>
+    <ErrorCode code="-200" message="创建Socket端口失败" description="创建Socket端口失败"/>
+    <ErrorCode code="-201" message="Socket 连接失败" description="Socket 连接失败"/>
+    <ErrorCode code="-202" message="设置Socket收发超时时间失败" description="设置Socket收发超时时间失败"/>
+    <ErrorCode code="-203" message="设置Socket异步模式失败" description="设置Socket异步模式失败"/>
+    <ErrorCode code="-204" message="发送Socket的字符数不等于字符串长度" description="发送Socket的字符数不等于字符串长度"/>
+    <ErrorCode code="-205" message="接收Socket数据失败" description="接收Socket数据失败"/>
+    <ErrorCode code="-206" message="初始化网络环境失败" description="初始化网络环境失败"/>
+
+    <ErrorCode code="-210" message="连接ZMQ端口失败" description="连接ZMQ端口失败"/>
+    <ErrorCode code="-211" message="绑定ZMQ端口失败" description="绑定ZMQ端口失败"/>
+    <ErrorCode code="-212" message="ZMQ端口发送数据失败" description="ZMQ端口发送数据失败"/>
+    <ErrorCode code="-213" message="ZMQ端口接收数据失败" description="ZMQ端口接收数据失败"/>
+
+    <!--RingQueue-->
+    <ErrorCode code="-230" message="访问地址超出队列中的有效值" description="访问地址超出队列中的有效值"/>
+    <ErrorCode code="-231" message="队列已满" description="请把环形队列的容量改为更大"/>
+    <ErrorCode code="-232" message="队列没有足够容量存储当前要存储数据" description="请把环形队列的容量改为更大"/>
+    <ErrorCode code="-233" message="队列为空不能Pop数据" description="队列为空不能Pop数据"/>
+    <ErrorCode code="-234" message="队列中的数据少于要取出的数据" description="队列中的数据少于要取出的数据"/>
+
+    <!--Json-->
+    <ErrorCode code="-300" message="字符串不符合Json格式" description="字符串不符合Json格式"/>
+
+    <!--Application-->
+    <ErrorCode code="-600" message="设备未连接不能执行命令" description="设备未连接不能执行命令"/>
+    <ErrorCode code="-601" message="电源设备命令执行超时" description="电源设备命令执行超时"/>
+    <ErrorCode code="-602" message="电源通道未配置，不允许使用" description="电源通道未配置，不允许使用"/>
+    <ErrorCode code="-603" message="电源模块失去连接" description="电源模块失去连接"/>
+
+    <!--针床设备-->
+    <ErrorCode code="-1000" message="连接针床PLC失败" description="连接针床PLC失败"/>
+    <ErrorCode code="-1001" message="托盘未放好" description="请检查托盘放置情况"/>
+    <ErrorCode code="-1002" message="针床上升超时" description="针床上升超时"/>
+    <ErrorCode code="-1003" message="针床上升位置中途脱落" description="针床上升位置中途脱落"/>
+    <ErrorCode code="-1004" message="针床下降超时" description="针床下降超时"/>
+    <ErrorCode code="-1005" message="气压异常（压缩空气）" description="气压异常（压缩空气）"/>
+    <ErrorCode code="-1006" message="针床初始化异常" description="针床初始化异常"/>
+    <ErrorCode code="-1007" message="烟雾报警" description="烟雾报警"/>
+    <ErrorCode code="-1008" message="托盘放反" description="托盘放反"/>
+    <ErrorCode code="-1009" message="无托盘针床不能压合" description="请检查托盘是否放置"/>
+    <ErrorCode code="-1010" message="入盘检测障碍物，禁止压合脱开" description="入盘检测障碍物，禁止压合脱开"/>
+    <ErrorCode code="-1011" message="通信异常" description="通信异常"/>
+    <ErrorCode code="-1012" message="命令错误" description="命令错误"/>
+    <ErrorCode code="-1013" message="抽真空异常" description="抽真空异常"/>
+    <ErrorCode code="-1014" message="泄真空异常" description="泄真空异常"/>
+    <ErrorCode code="-1015" message="压力传感器读取异常" description="压力传感器读取异常"/>
+    <ErrorCode code="-1016" message="取放盘中，禁止压合" description="取放盘中，禁止压合"/>
+    <ErrorCode code="-1017" message="保压漏气超标" description="保压漏气超标"/>
+    <ErrorCode code="-1018" message="电源柜急停" description="电源柜急停，停止充放电"/>
+    <ErrorCode code="-1019" message="AC电压异常" description="AC电压异常"/>
+    <ErrorCode code="-1020" message="库位温度超出阈值" description="库位温度超出阈值"/>
+
+    <!--电源设备-->
+    <ErrorCode code="-2001" message="充电过压保护" description="充电过压保护"/>
+    <ErrorCode code="-2002" message="充电过流保护" description="充电过流保护"/>
+    <ErrorCode code="-2003" message="放电欠压保护" description="放电欠压保护"/>
+    <ErrorCode code="-2004" message="放电过流保护" description="放电过流保护"/>
+    <ErrorCode code="-2005" message="充电过容保护" description="充电过容保护"/>
+    <ErrorCode code="-2006" message="直流输出限流保护" description="直流输出限流保护"/>
+    <ErrorCode code="-2007" message="电池过温保护" description="电池过温保护"/>
+    <ErrorCode code="-2008" message="反接保护" description="反接保护"/>
+    <ErrorCode code="-2009" message="孤岛效应保护（待定）" description="孤岛效应保护（待定）"/>
+    <ErrorCode code="-2010" message="输出端短路保护" description="输出端短路保护"/>
+    <ErrorCode code="-2011" message="电池短路保护" description="电池短路保护"/>
+    <ErrorCode code="-2012" message="风扇故障" description="风扇故障"/>
+    <ErrorCode code="-2013" message="输入BUS高故障" description="输入BUS高故障"/>
+    <ErrorCode code="-2014" message="电池电压波动故障" description="电池电压波动故障"/>
+    <ErrorCode code="-2015" message="电池电压突变故障" description="电池电压突变故障"/>
+    <ErrorCode code="-2016" message="输出电流波动故障" description="输出电流波动故障"/>
+    <ErrorCode code="-2017" message="输出电流突变故障" description="输出电流突变故障"/>
+    <ErrorCode code="-2018" message="输出端子接插故障" description="输出端子接插故障"/>
+    <ErrorCode code="-2019" message="电池欠温保护" description="电池欠温保护"/>
+    <ErrorCode code="-2020" message="放电欠容保护" description="放电欠容保护"/>
+    <ErrorCode code="-2021" message="接触阻抗保护" description="接触阻抗保护"/>
+    <ErrorCode code="-2022" message="电流超差保护" description="电流超差保护"/>
+    <ErrorCode code="-2023" message="电压超差保护" description="电压超差保护"/>
+    <ErrorCode code="-2024" message="回路阻抗保护" description="回路阻抗保护"/>
+    <ErrorCode code="-2025" message="功率线电压保护" description="功率线电压保护"/>
+
+    <!--单工步保护-->
+    <ErrorCode code="-2101" message="单工步温度上限保护" description="单工步温度上限保护"/>
+    <ErrorCode code="-2102" message="单工步容量上限保护" description="单工步容量上限保护"/>
+    <ErrorCode code="-2103" message="单工步容量下限保护" description="单工步容量下限保护"/>
+    <ErrorCode code="-2104" message="单工步电压上限保护" description="单工步电压上限保护"/>
+    <ErrorCode code="-2105" message="单工步电压下限保护" description="单工步电压下限保护"/>
+    <ErrorCode code="-2106" message="单工步电流上限保护" description="单工步电流上限保护"/>
+    <ErrorCode code="-2107" message="单工步电流下限保护" description="单工步电流下限保护"/>
+    <ErrorCode code="-2108" message="单步电流正跳幅度和次数保护" description="单步电流正跳幅度和次数保护"/>
+    <ErrorCode code="-2109" message="单步电流负跳幅度和次数保护" description="单步电流负跳幅度和次数保护"/>
+    <ErrorCode code="-2110" message="单步电压正跳幅度和次数保护" description="单步电压正跳幅度和次数保护"/>
+    <ErrorCode code="-2111" message="单步电压负跳幅度和次数保护" description="单步电压负跳幅度和次数保护"/>
+    
+	<!-- 消防-->
+	<ErrorCode code="-2201" message="消防预警" description="消防预警"/>
+			
+    <!-- 生产控制-->
+
+    <ErrorCode code="-3001" message="找不到对应的化成工艺配方" description="找不到对应的化成工艺配方"/>
+    <ErrorCode code="-3002" message="库位通道已保护" description="库位通道已保护"/>
+
+    <!-- 工装校准 -->
+    <ErrorCode code="-4000" message="" description=""/>
+
+  </Exceptions>
+</ExceptionConfigure>

@@ -1,0 +1,20 @@
+2022-06-09 11:39:18.724 [6793] LOG_ALARM -----------------  log4z thread started!   ---------------------------- log4z.cpp:1923
+2022-06-09 11:39:18.724 [6793] LOG_ALARM logger id=0 key=Main name=log path=../log/ level=1 display=true log4z.cpp:1933
+2022-06-09 11:39:18.724 [6793] LOG_ALARM logger id=1 key=ProcessData name=ProcessData path=../data/ProcessData/ level=0 display=false log4z.cpp:1933
+2022-06-09 11:39:18.724 [6793] LOG_ALARM logger id=2 key=StopData name=StopData path=../data/StopData/ level=0 display=false log4z.cpp:1933
+2022-06-09 11:39:18.724 [6793] LOG_ALARM logger id=3 key=TempData name=TempData path=../data/TempData/ level=0 display=false log4z.cpp:1933
+2022-06-09 11:39:18.774 [6769] LOG_INFO =============== BFG software version:12.0030.0010-0218 =============== main.cpp:167
+2022-06-09 11:39:20.823 [6808] LOG_DEBUG Master heartbeat starting...[10.168.202.20:5010] Cabinet.cpp:134
+2022-06-09 11:39:20.874 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:39:24.376 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:39:27.877 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:39:31.375 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:39:34.880 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:39:38.380 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:39:41.880 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:39:45.380 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:39:48.884 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:39:52.384 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:39:55.889 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:39:59.388 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172
+2022-06-09 11:40:02.888 [6808] LOG_DEBUG Master heartbeat connecting...[10.168.202.20:5010] Cabinet.cpp:172

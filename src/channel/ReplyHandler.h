@@ -1,0 +1,6 @@
+#ifndef REPLYHANDLER_H_#define REPLYHANDLER_H_#include "RingQueue.h"#include "log4z.h"#include "Type.h"#include "MsgFactory.h"#include "ChannelState.h"
+#define MAX_ACK_SIZE 				256extern LoggerId data_id_process;extern LoggerId data_id_stop;extern LoggerId cell_id_temp;class ReplyHandler{public:    ReplyHandler() {};	ReplyHandler(int cell_no, int ch_no);    ReplyHandler& operator= (const ReplyHandler& obj);	~ReplyHandler() {};    void append(uint8 *p_buf, int size);	void set_battery_type(const char *src);
+	void set_stepConf_number(const char *src);
+	void set_pallet_barcode(const char *src);	void set_batch_number(const char *src);	void set_battery_barcode(const char *src);#if 0		void set_vaccum_value(float val);	void set_celltemp_value(float *val);#endif		void reset_all_info_code();private:	int m_handle_a_frame(int *ack_size);public:	ChannelState  m_state;	ChannelProto_JN9504 recvReply;private:    int  m_cell_no;    int  m_ch_no;    RingQueue<uint8>    m_buffer;#ifndef PROTOCOL_5V160A    Step_Process_Data_t m_last_stop_data;	float               m_vac_val;
+	float               m_temper_val[6];#endif
+};#endif // REPLYHANDLER_H_
